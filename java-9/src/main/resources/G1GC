@@ -1,0 +1,17 @@
+G1 -> Garbage First, the default GC in Java 9.
+
+Goals:
+    - Low latency & throughput
+    - Pause target of 200ms
+
+Heap split into multiples regions. The size of the regions depends on the total heap size.
+The region sizes can vary from 1 to 32 MB. Is a pow of 2.
+
+Possible regions:
+    - Eden: new objects
+    - Survivor
+    - Old
+    - Humongous: object that is greater than average size.
+
+The G1GC demon mark the heap regions with old mark and the mixed them with eden regions to build survivors collections
+whose result is to free allocated spaces to more new eden regions.
