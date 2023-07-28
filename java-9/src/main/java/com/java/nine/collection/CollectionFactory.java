@@ -1,4 +1,4 @@
-package com.java.nine;
+package com.java.nine.collection;
 
 import java.util.*;
 
