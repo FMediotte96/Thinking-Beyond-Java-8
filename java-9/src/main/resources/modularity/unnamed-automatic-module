@@ -1,0 +1,6 @@
+Unnamed Module -> reads all of the modules and exports of all the packages
+    running the app from the classpath
+
+Automatic module -> running from the module path
+    named/explicit module cannot declare a dependence on an unnamed module that's why
+    automatic module borns. Allow us to migrate incrementally java versions.
